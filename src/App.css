@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+.headTop {
+  padding-top: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.circles {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  left: 0px;
+  top: -55px;
+}
+.bgCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #0000FF;
+  border-radius: 50%;
+}
+.otherCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  position: absolute;
+  background-color: #0000FF;
+}
+.two {
+  left: 10%;
+  z-index: 2;
+}
+.three {
+  left: 20%;
+  z-index: 3;
+}
+.four {
+  left: 30%;
+  z-index: 4;
+}
+.five {
+  left: 40%;
+  z-index: 5;
+}
+.six {
+  left: 50%;
+  z-index: 6;
+}
+.seven {
+  left: 60%;
+  z-index: 7;
+}
+.byName {
+  position: relative;
+  left: 20px;
+  z-index: 20;
+  font-size: 18px;
+  font-weight: 300;
+}
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  text-decoration: none!important;
   color: white;
+  background-color: #0000FF;
+  padding: 10px;
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: green;
+}
+.nav ul li a:hover {
+  animation: 0.5s twoColor ease-in-out forwards;
+  /* opacity: 0; */
+
+}
+@keyframes twoColor {
+  0%   {
+    background: rgb(185, 185, 228);
+    opacity: 1;
+  }
+  100%   {
+    background: #0000FF;
+    opacity: 1;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 425px){
+  ul li{
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+  .head{
+    display: flex;
+    flex-direction: column;
+  }
+  .rightText{
+    margin-top: 20px ;
+    width: 80%;
+  }
+  .rightText p{
+    color: blue;
+
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
