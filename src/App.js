@@ -24,9 +24,9 @@ function App() {
       <Route path='/all' element={<All/>} />
       <Route path='/tech' element={<Tech />   } />
       <Route path='/politics' element={<Politics />} />
-      <Route path='/Entertainment' element={<Entertainment />} />
-      <Route path='/Health' element={<Health />} />
-      <Route path='/Sport' element={<Sport />} /> 
+      <Route path='/entertainment' element={<Entertainment />} />
+      <Route path='/health' element={<Health />} />
+      <Route path='/sport' element={<Sport />} /> 
     </Routes>
     </div>
   );
