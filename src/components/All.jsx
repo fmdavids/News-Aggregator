@@ -1,14 +1,5 @@
-
-// Fetch News API
-// 1 create your design from XD file
-//Navigate with react router dom 
-// 2 use fetch API useState, useEffect
-// 3 use useParams for  (indivisual page navigation, unfortunately it is a free API, it cannot work)
-// 4 if on dashboard(when the user is logged in he should not see login )using conditional rendering
- 
-import React  from 'react';
+import React from 'react'
 import { useState, useEffect } from 'react';
-
 
 const All = () => {
   const [news, setNews] = useState(null);
@@ -38,7 +29,7 @@ return(<div>
             <div className="card-body">
               <p>{val.content}</p>
             </div>
-            <a className=" text-decoration-none mb-4 ms-4 float-start" href={`${val.url}`} target="blank">Read more</a>
+            <a className="text-decoration-none mb-4 ms-4 float-start" href={`${val.url}`} target="blank">Read more</a>
             </div>
           </div>
         )
@@ -58,7 +49,6 @@ return(<div>
     </div>
   </div>
   )
-
 }
 
-export default All;
+export default All

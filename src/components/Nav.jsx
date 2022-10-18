@@ -4,8 +4,8 @@ const Nav = () => {
         <div className="container mt-3">
             <div className="nav">
                 <ul className="mt-4">
-                    <li className="ps-lg-3" ><Link to="All">All</Link></li >
-                    <li className="ps-lg-3" ><Link to="Tech">Tech</Link></li >
+                    <li className="ps-lg-3" ><Link to="/">All</Link></li >
+                    <li className="ps-lg-3" ><Link to="tech">Tech</Link></li >
                     <li className="ps-lg-3" ><Link to="Politics">Politics</Link></li >
                     <li className="ps-lg-3" ><Link to="Entertainment">Entertainment</Link></li >
                     <li className="ps-lg-3" ><Link to="Health">Health</Link></li >

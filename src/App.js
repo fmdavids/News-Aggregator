@@ -21,7 +21,6 @@ function App() {
       <Nav />
     <Routes>
       <Route path='/' element={<All/>} />
-      <Route path='/all' element={<All/>} />
       <Route path='/tech' element={<Tech />   } />
       <Route path='/politics' element={<Politics />} />
       <Route path='/entertainment' element={<Entertainment />} />
